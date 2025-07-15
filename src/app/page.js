@@ -1,6 +1,12 @@
 import Image from "next/image";
-import apps from "../data/apps"
-import articles from "../data/articles"
+import apps from "../data/apps";
+import articles from "../data/articles";
+import { Neuton } from "next/font/google";
+
+const raleway = Neuton({
+  subsets: ["latin"],
+  weight: ["300", "700"], // weight rat3s
+});
 
 export default function Home() {
   return (
@@ -17,88 +23,48 @@ export default function Home() {
             height={200}
             className="mx-auto rounded-full border-4"
           />
-          <h1 className="text-4xl font-bold">Buğrahan Karamollaoğlu</h1>
-          <h4 className="text-3xl">Mobile Developer</h4>
+          <h1 className={`text-5xl font-bold ${raleway.className}`}>Buğrahan Karamollaoğlu</h1>
+          <h4 className={`text-4xl ${raleway.className}`}>Mobile Developer</h4>
         </section>
 
         {/* About me Section */}
 
+        {/* About me Section */}
         <section id="about" className="text-center space-y-4">
-          <div className="h-px my-6 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
-          <p className="max-w-xl mx-auto">
+          <div className="h-px mb-10 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+
+          <p className="max-w-xl mx-auto mt-8">
             I'm a self-driven mobile developer focused on building clean, fast, and scalable apps using Flutter.
             With a background in English Language & Literature, I combine logical thinking with strong communication.
           </p>
-          <a href="#apps" className="inline-block bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">
+
+          {/* Clickable GIF (optional) */}
+          <button
+            className="mx-auto block focus:outline-none"
+            aria-label="Scroll to projects"
+          >
+            <Image
+              src="/mouse_down.gif"
+              alt="Animated mouse scroll indicator"
+              width={50}  // Adjusted to reasonable size for a mouse icon
+              height={50}
+              unoptimized={true}
+              className="mx-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </button>
+
+          {/* Download Button */}
+          <a
+            href="#apps"
+            className="inline-block bg-white mt-5 text-black px-6 py-3 rounded-xl hover:bg-gray-100 transition-all shadow-sm hover:shadow-md"
+          >
             Download Resume
           </a>
         </section>
 
         {/* Apps Section */}
 
-        <section id="apps" className="space-y-10">
-          <h2 className="text-3xl font-bold text-center">📱 Apps</h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {apps.map((app, idx) => (
-              <div
-                key={idx}
-                className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl shadow-xl p-6 transition hover:scale-[1.015] hover:shadow-2xl duration-300"
-              >
-                {/* Top Row: Small Image + Title */}
-                <div className="flex items-start gap-4">
-                  {app.image && (
-                    <Image
-                      src={app.image}
-                      alt={app.title}
-                      width={80}
-                      height={80}
-                      className="rounded-xl object-cover"
-                    />
-                  )}
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">{app.title}</h3>
-                    <div className="flex flex-wrap gap-2 mt-1">
-                      {app.tech.map((tech, i) => (
-                        <span
-                          key={i}
-                          className="text-xs bg-white/20 text-white px-2 py-1 rounded-full backdrop-blur-sm"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Description */}
-                <p className="text-gray-200 mt-4 text-sm">{app.description}</p>
-
-                {/* Links */}
-                <div className="flex gap-6 mt-4 text-sm">
-                  {app.playStore && (
-                    <a
-                      href={app.playStore}
-                      target="_blank"
-                      className="text-blue-300 hover:text-blue-400 underline"
-                    >
-                      📲 Play Store
-                    </a>
-                  )}
-                  {app.github && (
-                    <a
-                      href={app.github}
-                      target="_blank"
-                      className="text-blue-300 hover:text-blue-400 underline"
-                    >
-                      🛠 GitHub
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Articles Section */}
         <section id="articles" className="space-y-4">

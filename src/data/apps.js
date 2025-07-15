@@ -22,7 +22,7 @@ const apps = [
 		tech: ["Jetpack Compose", "Django Backend", "Rest API"],
 		playStore: "https://play.google.com/store/apps",
 		github: "https://github.com/bugrahankaramollaoglu/tasty",
-	}, 
+	},
 
 ]
 
