@@ -17,7 +17,7 @@ export default function Home() {
 
       <div className="space-y-16">
 
-        {/* Hero Section */}
+        {/* Hero Section. */}
         <HeroSection oswald={oswald} inter={inter} />
 
         {/* About Me Section */}
