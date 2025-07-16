@@ -1,16 +1,20 @@
 import Image from "next/image";
 import apps from "../data/apps";
 import articles from "../data/articles";
-import { Neuton } from "next/font/google";
+import { Oswald } from "next/font/google";
+import { Typewriter } from "@/components/ui/typewriter";
+import { SparklesCore } from "@/components/ui/sparkles"
 
-const raleway = Neuton({
+
+const oswald = Oswald({
   subsets: ["latin"],
-  weight: ["300", "700"], // weight rat3s
+  weight: ["400", "700"], // weight rat3s
 });
 
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <SparklesCore particleColor="#ffffffff" className="absolute inset-0 z-0" />
       <div className="mt-10 space-y-16">
 
         {/* Hero Section */}
@@ -23,8 +27,11 @@ export default function Home() {
             height={200}
             className="mx-auto rounded-full border-4"
           />
-          <h1 className={`text-5xl font-bold ${raleway.className}`}>Buğrahan Karamollaoğlu</h1>
-          <h4 className={`text-4xl ${raleway.className}`}>Mobile Developer</h4>
+          {/* <h1 className={`text-5xl font-bold ${raleway.className}`}>Buğrahan Karamollaoğlu</h1> */}
+          <h1 className={`text-5xl font-bold ${oswald.className}`}>
+            <Typewriter delay={0.5} baseText="Buğrahan Karamollaoğlu" />
+          </h1>
+          <h4 className={`text-4xl ${oswald.className}`}>Mobile Developer</h4>
         </section>
 
         {/* About me Section */}
