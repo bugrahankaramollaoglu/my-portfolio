@@ -1,27 +1,81 @@
 const apps = [
 	{
-		title: "Tasty",
-		description: "E-commerce app with cart, payments, and Firebase auth.",
-		image: "/tasty_logo.png", // put this in /public folder
-		tech: ["Jetpack Compose", "Django Backend", "Rest API"],
-		playStore: "https://play.google.com/store/apps",
-		github: "https://github.com/bugrahankaramollaoglu/tasty",
+		id: 1,
+		name: "Sentensearch",
+		definition: "An English learning app, published on Play Store!",
+		url: "https://github.com/bugrahankaramollaoglu/sentensearch?tab=readme-ov-file#sentensearch",
+		icon: "/logos/sentensearch.png",
+		tech_stack: "Kotlin XML, MVVM, Retrofit, OkHttp, Navigation",
+		language: "android",
+
 	},
 	{
-		title: "Tasty",
-		description: "E-commerce app with cart, payments, and Firebase auth.",
-		image: "/tasty_logo.png", // put this in /public folder
-		tech: ["Jetpack Compose", "Django Backend", "Rest API"],
-		playStore: "https://play.google.com/store/apps",
-		github: "https://github.com/bugrahankaramollaoglu/tasty",
+		id: 2,
+		name: "Tasty",
+		definition: "An e-commerce app, inspired by Yemeksepeti.",
+		url: "https://github.com/bugrahankaramollaoglu/tasty?tab=readme-ov-file#-tasty--e-commerce-app-jetpack-compose",
+		icon: "/logos/tasty.png",
+		tech_stack: "Jetpack Compose, MVVM, Django backend, Rest API, SQLite, Coil, Google Maps API",
+		language: "android",
+
 	},
 	{
-		title: "Tasty",
-		description: "E-commerce app with cart, payments, and Firebase auth.",
-		image: "/tasty_logo.png", // put this in /public folder
-		tech: ["Jetpack Compose", "Django Backend", "Rest API"],
-		playStore: "https://play.google.com/store/apps",
-		github: "https://github.com/bugrahankaramollaoglu/tasty",
+		id: 3,
+		name: "Gojo",
+		definition: "A task tracking app.",
+		url: "https://github.com/bugrahankaramollaoglu/gojo#gojo",
+		icon: "/logos/gojo.png",
+		tech_stack: "Flutter, MVP, Nodejs + Express backend, BloC, MongoDB",
+		language: "flutter",
+	},
+	{
+		id: 4,
+		name: "Greefin",
+		definition: "A finance tracking app with sustainability theme.",
+		url: "https://github.com/bugrahankaramollaoglu/greefin#screenshots",
+		icon: "/logos/greefin.png",
+		tech_stack: "Flutter, MVVM, Figma, Jira, Agile",
+		language: "flutter",
+
+	},
+
+	{
+		id: 5,
+		name: "Remindly",
+		definition: "A Google Calendar clone.",
+		url: "https://github.com/bugrahankaramollaoglu/remindly#remindly",
+		icon: "/logos/remindly.png",
+		tech_stack: "Jetpack Compose, MVVM, Firebase, Responsive Design",
+		language: "Android",
+
+	},
+	{
+		id: 6,
+		name: "Rota Portalı",
+		definition: "An app to share your journey experiences.",
+		url: "https://github.com/bugrahankaramollaoglu/rota_portali#-rota-portali",
+		icon: "/logos/rota_portali.png",
+		tech_stack: "Flutter, Firebase, Google Maps API",
+		language: "flutter",
+	},
+	{
+		id: 7,
+		name: "Weatherly",
+		definition: "A weather forecast app.",
+		url: "https://github.com/bugrahankaramollaoglu/weatherly#%EF%B8%8F-weatherly",
+		icon: "/logos/weatherly.png",
+		tech_stack: "Flutter, API, Provider, Http",
+		language: "flutter",
+
+	},
+	{
+		id: 8,
+		name: "Catch Flappy",
+		definition: "A simple catch-the-kenny game.",
+		url: "https://github.com/bugrahankaramollaoglu/catch-flappy#-----catch-flappy",
+		icon: "/logos/catch_flappy.png",
+		tech_stack: "Java, Threads, Shared Preferences",
+		language: "android",
 	},
 
 ]
