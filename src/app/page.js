@@ -1,7 +1,4 @@
-import { Inter, Lato, Lora, Oswald, Roboto, Ubuntu } from "next/font/google";
-import { Typewriter } from "@/components/ui/typewriter";
 import { SparklesCore } from "@/components/ui/sparkles"
-import { Mail, Github, Linkedin } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import ContactSection from "@/components/sections/ContactSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -9,6 +6,8 @@ import AppsSection from "@/components/sections/AppsSection";
 import ArticlesSection from "@/components/sections/ArticlesSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import EducationSection from "@/components/sections/EducationSection";
+import BootcampsSection from "@/components/sections/BootcampsSection";
+import ExperiencesSection from "@/components/sections/ExperiencesSection";
 import { inter, oswald } from "@/components/utilities/fonts";
 
 export default function Home() {
@@ -30,8 +29,14 @@ export default function Home() {
         {/* Horizontal Divider*/}
         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 
+        {/* Experiences Section */}
+        <ExperiencesSection oswald={oswald} inter={inter} />
+
         {/* Education Section */}
         <EducationSection oswald={oswald} inter={inter} />
+
+        {/* Bootcamps Section */}
+        <BootcampsSection oswald={oswald} inter={inter} />
 
         {/* Apps Section */}
         <AppsSection oswald={oswald} inter={inter} />
@@ -41,7 +46,6 @@ export default function Home() {
 
         {/* Skills Section */}
         <SkillsSection oswald={oswald} inter={inter} />
-
 
       </div>
     </main>

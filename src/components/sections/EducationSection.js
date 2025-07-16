@@ -5,22 +5,25 @@ export default function EducationSection({ oswald, inter }) {
 			period: "2020-2025",
 			location: "İstanbul",
 			degree: "Bachelor's Degree",
-			field: "English Language and Literature",
-			type: "university"
+			field: "Western Languages and Literatures",
+			type: "university",
+			status: "Completed"
 		},
 		{
 			institution: "Ecole 42",
 			period: "2022-2024",
 			location: "İstanbul",
 			field: "Software Engineering with C/C++",
-			type: "coding-school"
+			type: "coding-school",
+			status: "Completed"
 		},
 		{
 			institution: "Google Academy",
 			period: "2023-2024",
 			location: "Online",
 			field: "Flutter & Project Management",
-			type: "certification"
+			type: "certification",
+			status: "Completed"
 		}
 	];
 
@@ -97,10 +100,32 @@ export default function EducationSection({ oswald, inter }) {
 								</div>
 							</div>
 						</div>
+
+
 					))}
+					{/* Extracurricular Activities */}
+					<div className="bg-gradient-to-r from-slate-900/50 to-gray-900/50 rounded-2xl p-8 border border-white/20 backdrop-blur-sm">
+						<h3 className={`text-2xl font-bold text-white mb-6 ${oswald.className} flex items-center space-x-3`}>
+							<div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+								<svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" />
+								</svg>
+							</div>
+							<span>Extracurricular Activities</span>
+						</h3>
+
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+							{extracurriculars.map((activity, index) => (
+								<div key={index} className="bg-white/5 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 hover:border-white/30 transition-all duration-300 hover:bg-white/10 group">
+									<div className="flex items-center space-x-3">
+										<div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full group-hover:animate-pulse"></div>
+										<span className={`text-gray-200 font-medium ${inter.className}`}>{activity}</span>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
-
-
 			</div>
 		</section>
 	);
