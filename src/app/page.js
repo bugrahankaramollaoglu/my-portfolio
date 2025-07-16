@@ -20,11 +20,11 @@ export default function Home() {
         {/* Hero Section */}
         <HeroSection oswald={oswald} inter={inter} />
 
-        {/* Contact Section */}
-        <ContactSection oswald={oswald} inter={inter} />
-
         {/* About Me Section */}
         <AboutSection oswald={oswald} inter={inter} />
+
+        {/* Contact Section */}
+        <ContactSection oswald={oswald} inter={inter} />
 
         {/* Horizontal Divider*/}
         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>

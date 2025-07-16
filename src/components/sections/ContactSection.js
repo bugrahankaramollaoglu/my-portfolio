@@ -46,7 +46,21 @@ export default function ContactSection() {
 				{/* Download Button */}
 				<div className="flex justify-center">
 					<ResumeDownloadButton oswald={oswald} inter={inter} />
-				</div>
+				</div> •
+
+				{/* Scroll down mouse GIF */}
+				<button
+					className="focus:outline-none"
+					aria-label="Scroll to projects"
+				>
+					<img
+						src="https://i0.wp.com/rambutgelap.com/wp-content/uploads/2022/07/scroll-down-mouse.gif?ssl=1"
+						alt="Scroll down mouse GIF"
+						width={50}
+						height={50}
+						className="opacity-80 hover:opacity-100 transition-opacity"
+					/>
+				</button>
 			</h2>
 
 
