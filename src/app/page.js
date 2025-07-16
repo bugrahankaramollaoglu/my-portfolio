@@ -8,6 +8,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import AppsSection from "@/components/sections/AppsSection";
 import ArticlesSection from "@/components/sections/ArticlesSection";
 import SkillsSection from "@/components/sections/SkillsSection";
+import EducationSection from "@/components/sections/EducationSection";
 import { inter, oswald } from "@/components/utilities/fonts";
 
 export default function Home() {
@@ -28,6 +29,9 @@ export default function Home() {
 
         {/* Horizontal Divider*/}
         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+
+        {/* Education Section */}
+        <EducationSection oswald={oswald} inter={inter} />
 
         {/* Apps Section */}
         <AppsSection oswald={oswald} inter={inter} />

@@ -7,7 +7,6 @@ const apps = [
 		icon: "/logos/sentensearch.png",
 		tech_stack: "Kotlin XML, MVVM, Retrofit, OkHttp, Navigation",
 		language: "android",
-
 	},
 	{
 		id: 2,
@@ -17,10 +16,28 @@ const apps = [
 		icon: "/logos/tasty.png",
 		tech_stack: "Jetpack Compose, MVVM, Django backend, Rest API, SQLite, Coil, Google Maps API",
 		language: "android",
-
 	},
 	{
 		id: 3,
+		name: "Remindly",
+		definition: "A Google Calendar clone.",
+		url: "https://github.com/bugrahankaramollaoglu/remindly#remindly",
+		icon: "/logos/remindly.png",
+		tech_stack: "Jetpack Compose, MVVM, Firebase, Responsive Design",
+		language: "android",
+
+	},
+	{
+		id: 4,
+		name: "Catch Flappy",
+		definition: "A simple catch-the-kenny game.",
+		url: "https://github.com/bugrahankaramollaoglu/catch-flappy#-----catch-flappy",
+		icon: "/logos/catch_flappy.png",
+		tech_stack: "Java, Threads, Shared Preferences",
+		language: "android",
+	},
+	{
+		id: 5,
 		name: "Gojo",
 		definition: "A task tracking app.",
 		url: "https://github.com/bugrahankaramollaoglu/gojo#gojo",
@@ -29,7 +46,7 @@ const apps = [
 		language: "flutter",
 	},
 	{
-		id: 4,
+		id: 6,
 		name: "Greefin",
 		definition: "A finance tracking app with sustainability theme.",
 		url: "https://github.com/bugrahankaramollaoglu/greefin#screenshots",
@@ -38,19 +55,8 @@ const apps = [
 		language: "flutter",
 
 	},
-
 	{
-		id: 5,
-		name: "Remindly",
-		definition: "A Google Calendar clone.",
-		url: "https://github.com/bugrahankaramollaoglu/remindly#remindly",
-		icon: "/logos/remindly.png",
-		tech_stack: "Jetpack Compose, MVVM, Firebase, Responsive Design",
-		language: "Android",
-
-	},
-	{
-		id: 6,
+		id: 7,
 		name: "Rota Portalı",
 		definition: "An app to share your journey experiences.",
 		url: "https://github.com/bugrahankaramollaoglu/rota_portali#-rota-portali",
@@ -59,7 +65,7 @@ const apps = [
 		language: "flutter",
 	},
 	{
-		id: 7,
+		id: 8,
 		name: "Weatherly",
 		definition: "A weather forecast app.",
 		url: "https://github.com/bugrahankaramollaoglu/weatherly#%EF%B8%8F-weatherly",
@@ -68,15 +74,7 @@ const apps = [
 		language: "flutter",
 
 	},
-	{
-		id: 8,
-		name: "Catch Flappy",
-		definition: "A simple catch-the-kenny game.",
-		url: "https://github.com/bugrahankaramollaoglu/catch-flappy#-----catch-flappy",
-		icon: "/logos/catch_flappy.png",
-		tech_stack: "Java, Threads, Shared Preferences",
-		language: "android",
-	},
+
 
 ]
 
