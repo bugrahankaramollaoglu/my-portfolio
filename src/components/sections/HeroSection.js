@@ -1,13 +1,6 @@
 import Image from "next/image";
-import { Inter, Lato, Lora, Oswald, Roboto, Ubuntu } from "next/font/google";
 import { Typewriter } from "@/components/ui/typewriter";
-import { SparklesCore } from "@/components/ui/sparkles"
-import { Mail, Github, Linkedin } from "lucide-react";
-import { FaMedium, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-
-
-{/* Hero Section */ }
 
 export default function HeroSection({ oswald, inter }) {
 	return (

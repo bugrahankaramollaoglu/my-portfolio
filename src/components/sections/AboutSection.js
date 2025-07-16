@@ -1,7 +1,3 @@
-import { FaMedium, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
-
-{/* about section */ }
 export default function AboutSection({ oswald, inter }) {
 	return (
 
@@ -13,10 +9,8 @@ export default function AboutSection({ oswald, inter }) {
 				{/* About Me paragraph */}
 				<p className={`${inter.className} text-lg text-slate-300 leading-relaxed flex-1 text-left`}>
 					I am a <span className="text-white font-semibold">Boğaziçi University</span> graduate programmer developing
-					<span className="text-blue-400 font-semibold"> Native Android</span> /
-					<span className="text-blue-400 font-semibold"> Flutter</span> apps using a wide span of mobile technologies.
-					I write & publish apps along with writing Medium articles on Medium.
-					Currently learning Data Science and Machine Learning to implement Artificial Intelligence Agents in my apps.
+					and publishing <span className="text-white font-semibold"> mobile apps </span>
+					using a wide span of the latest technologies. I am currently learning Data Science and Machine Learning to implement Artificial Intelligence Agents in my apps.
 				</p>
 
 				{/* Scroll down mouse GIF */}

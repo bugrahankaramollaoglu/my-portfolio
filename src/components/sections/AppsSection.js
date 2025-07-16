@@ -1,9 +1,6 @@
 
 import apps from "../../data/apps";
 
-
-
-{/* about section */ }
 export default function AboutSection({ oswald, inter }) {
 	return (
 

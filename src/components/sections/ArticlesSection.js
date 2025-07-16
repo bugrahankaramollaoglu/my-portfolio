@@ -1,6 +1,5 @@
 import articles from "../../data/articles";
 
-{/* about section */ }
 export default function ArticlesSection({ oswald, inter }) {
 	return (
 

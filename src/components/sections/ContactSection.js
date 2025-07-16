@@ -1,7 +1,5 @@
 import { FaMedium, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-
-{/* contact section */ }
 export default function ContactSection({ oswald, inter }) {
 	return (
 

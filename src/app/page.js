@@ -7,6 +7,7 @@ import ContactSection from "@/components/sections/ContactSection";
 import AboutSection from "@/components/sections/AboutSection";
 import AppsSection from "@/components/sections/AppsSection";
 import ArticlesSection from "@/components/sections/ArticlesSection";
+import SkillsSection from "@/components/sections/SkillsSection";
 import { inter, oswald } from "@/components/utilities/fonts";
 
 export default function Home() {
@@ -33,6 +34,10 @@ export default function Home() {
 
         {/* Articles Section */}
         <ArticlesSection oswald={oswald} inter={inter} />
+
+        {/* Skills Section */}
+        <SkillsSection oswald={oswald} inter={inter} />
+
 
       </div>
     </main>
