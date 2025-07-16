@@ -48,10 +48,9 @@ export default function SkilssSection({ oswald, inter }) {
 						<img src="/skill_icons/mongodb.png" alt="Flutter" className="h-7 w-7" />
 						<span className="mx-2"></span>
 
-
 					</div>
 
-					{/* Row 2 */}
+					{/* Row 3 */}
 					<div className="flex items-center gap-2 flex-wrap justify-center">
 						Postman
 						<img src="/skill_icons/postman.png" alt="Flutter" className="h-7 w-7" />
