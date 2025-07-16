@@ -1,12 +1,15 @@
 import { FaMedium, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import ResumeDownloadButton from '../ResumeDownloadButton';
+import { inter, oswald } from "@/components/utilities/fonts";
 
-export default function ContactSection({ oswald, inter }) {
+export default function ContactSection() {
+
 	return (
 
 
-		< section id = "contact" className = "text-center" >
+		< section id="contact" className="text-center" >
 
-			<h2 className={`text-lg font-semibold flex justify-center items-center gap-3 ${inter.className}`}>
+			<h2 className={`text-lg font-semibold flex justify-center items-center gap-3`}>
 
 				Contact me on
 
@@ -41,16 +44,13 @@ export default function ContactSection({ oswald, inter }) {
 					<FaMedium className="w-6 h-6 cursor-pointer" />
 				</a> •
 				{/* Download Button */}
-				<a
-					href="#apps"
-					className={`inline-block font-semibold bg-white text-black px-3 py-1 text-sm rounded-xl hover:bg-gray-100 transition-all shadow-sm hover:shadow-md ${inter.className}`}
-				>
-					Download Resume
-				</a>
+				<div className="flex justify-center">
+					<ResumeDownloadButton oswald={oswald} inter={inter} />
+				</div>
 			</h2>
 
 
-        </section >
+		</section >
 
 
 	);

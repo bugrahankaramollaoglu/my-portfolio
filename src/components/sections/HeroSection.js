@@ -20,7 +20,7 @@ export default function HeroSection({ oswald, inter }) {
 				<Typewriter delay={0.5} baseText="Fullstack Mobile Developer." />
 			</h4>
 			<h4 className={`text-3xl flex justify-center items-center gap-2 ${oswald.className}`}>
-				Native Android
+				Android
 				<img src="/icons/android.png" alt="Android" className="h-6 w-6" />
 				•
 				Flutter
