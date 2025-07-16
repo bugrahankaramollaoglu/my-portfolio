@@ -1,12 +1,17 @@
 import Image from "next/image";
 import apps from "../data/apps";
 import articles from "../data/articles";
-import { Oswald } from "next/font/google";
+import { Inter, Lato, Lora, Oswald, Roboto, Ubuntu } from "next/font/google";
 import { Typewriter } from "@/components/ui/typewriter";
 import { SparklesCore } from "@/components/ui/sparkles"
 
 
 const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["300", "700"], // weight rat3s
+});
+
+const inter = Lato({
   subsets: ["latin"],
   weight: ["400", "700"], // weight rat3s
 });
@@ -47,43 +52,58 @@ export default function Home() {
           </h4>
         </section>
 
-        {/* About me Section */}
+        <section id="contact" className="text-center space-y-4">
+          <h2 className="text-2xl font-semibold">📬 Contact me on</h2>
+          <p>Reach out for collaboration or job opportunities:</p>
+          <div className="flex justify-center gap-6 text-blue-600">
+            <a href="mailto:your@email.com" className="hover:text-blue-400" aria-label="Email">
+              <Mail className="w-6 h-6" />
+            </a>
+            <a href="https://linkedin.com/in/yourname" target="_blank" className="hover:text-blue-400" aria-label="LinkedIn">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" className="hover:text-blue-400" aria-label="GitHub">
+              <Github className="w-6 h-6" />
+            </a>
+          </div>
+        </section>
 
-        {/* About me Section */}
+        {/* About Me Section */}
         <section id="about" className="text-center space-y-4">
           <div className="relative w-full my-10 h-0.5">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-70"></div>
           </div>
 
-          <p className="max-w-xl mx-auto mt-8">
-            Versatile and motivated mobile developer with computer engineering foundation and a humanities background from Boğaziçi
-            University. Gained a programming experience in C/C++ at Ecole42, followed by training in Flutter and project management at Google
-            Academy. Specialized in Native Android development in Java, Kotlin, and Jetpack Compose.
+          <p className={`max-w-2xl mx-auto mt-8 ${inter.className} text-lg text-slate-300 leading-relaxed`}>
+            I am a <span className="text-white font-semibold">Boğaziçi University</span> graduate programmer developing
+            <span className="text-blue-400 font-semibold"> Native Android</span> /
+            <span className="text-blue-400 font-semibold"> Flutter</span> apps using a wide span of mobile technologies.
+            Currently learning Data Science and Machine Learning to implement Artificial Intelligence Agents in my apps.
           </p>
-
-          {/* GIF) */}
-          <button
-            className="mx-auto block focus:outline-none"
-            aria-label="Scroll to projects"
-          >
-            <Image
-              src="/mouse_down.gif"
-              alt="Animated mouse scroll indicator"
-              width={50}  // Adjusted to reasonable size for a mouse icon
-              height={50}
-              unoptimized={true}
-              className="mx-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-          </button>
 
           {/* Download Button */}
           <a
             href="#apps"
-            className="inline-block bg-white mt-5 text-black px-6 py-3 rounded-xl hover:bg-gray-100 transition-all shadow-sm hover:shadow-md"
+            className="inline-block bg-white text-black px-6 py-3 rounded-xl hover:bg-gray-100 transition-all shadow-sm hover:shadow-md"
           >
             Download Resume
           </a>
+
+          {/* GIF */}
+          <button
+            className="mx-auto block focus:outline-none mt-2"
+            aria-label="Scroll to projects"
+          >
+            <img
+              src="https://i0.wp.com/rambutgelap.com/wp-content/uploads/2022/07/scroll-down-mouse.gif?ssl=1"
+              alt="Scroll down mouse GIF"
+              width={50}
+              height={50}
+              className="mx-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </button>
         </section>
+
 
         {/* Apps Section */}
 
@@ -113,15 +133,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="text-center space-y-4">
-          <h2 className="text-2xl font-semibold">📬 Contact</h2>
-          <p>Reach out for collaboration or job opportunities:</p>
-          <div className="space-x-4">
-            <a href="mailto:your@email.com" className="text-blue-600 hover:underline">Email</a>
-            <a href="https://linkedin.com/in/yourname" className="text-blue-600 hover:underline" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yourusername" className="text-blue-600 hover:underline" target="_blank">GitHub</a>
-          </div>
-        </section>
 
 
       </div>
