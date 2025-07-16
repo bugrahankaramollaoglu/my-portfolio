@@ -4,6 +4,8 @@ import articles from "../data/articles";
 import { Inter, Lato, Lora, Oswald, Roboto, Ubuntu } from "next/font/google";
 import { Typewriter } from "@/components/ui/typewriter";
 import { SparklesCore } from "@/components/ui/sparkles"
+import { Mail, Github, Linkedin } from "lucide-react";
+import { FaMedium, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 
 const oswald = Oswald({
@@ -19,9 +21,10 @@ const inter = Lato({
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <SparklesCore particleColor="#ffffffff" className="absolute inset-0 z-0" />
+      {/* <SparklesCore particleColor="#ffffffff" className="absolute inset-0 z-0" /> */}
+      <SparklesCore particleColor="#ffffffff" className="absolute inset-0 z-0 pointer-events-none" />
 
-      <div className="mt-10 space-y-16">
+      <div className="space-y-16">
 
         {/* Hero Section */}
 
@@ -52,56 +55,86 @@ export default function Home() {
           </h4>
         </section>
 
-        <section id="contact" className="text-center space-y-4">
-          <h2 className="text-2xl font-semibold">📬 Contact me on</h2>
-          <p>Reach out for collaboration or job opportunities:</p>
-          <div className="flex justify-center gap-6 text-blue-600">
-            <a href="mailto:your@email.com" className="hover:text-blue-400" aria-label="Email">
-              <Mail className="w-6 h-6" />
+        {/* contact section */}
+
+        <section id="contact" className="text-center">
+
+          <h2 className={`text-lg font-semibold flex justify-center items-center gap-3 ${inter.className}`}>
+
+            Contact me on
+
+            <a
+              href="https://linkedin.com/in/bugrahankaramollaoglu"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-blue-600 hover:text-blue-800"
+            >
+              <FaLinkedin className="w-6 h-6 cursor-pointer" />
             </a>
-            <a href="https://linkedin.com/in/yourname" target="_blank" className="hover:text-blue-400" aria-label="LinkedIn">
-              <Linkedin className="w-6 h-6" />
+
+            <a href="mailto:bugrahankaramollaolgu@gxample.com" aria-label="Email" className="text-blue-600 hover:text-blue-800">
+              <FaEnvelope className="w-6 h-6 cursor-pointer" />
             </a>
-            <a href="https://github.com/yourusername" target="_blank" className="hover:text-blue-400" aria-label="GitHub">
-              <Github className="w-6 h-6" />
+
+            <a
+              href="https://github.com/bugrahankaramollaoglu"
+              target="_blank"
+              aria-label="Github"
+              className="text-blue-600 hover:text-blue-800"
+            >
+              <FaGithub className="w-6 h-6 cursor-pointer" />
             </a>
-          </div>
+            <a
+              href="https://medium.com/@bugrahankaramollaoglu"
+              target="_blank"
+              aria-label="Medium"
+              className="text-blue-600 hover:text-blue-800"
+            >
+              <FaMedium className="w-6 h-6 cursor-pointer" />
+            </a> •
+            {/* Download Button */}
+            <a
+              href="#apps"
+              className={`inline-block font-semibold bg-white text-black px-3 py-1 text-sm rounded-xl hover:bg-gray-100 transition-all shadow-sm hover:shadow-md ${inter.className}`}
+            >
+              Download Resume
+            </a>
+          </h2>
+
+
         </section>
+
+
 
         {/* About Me Section */}
         <section id="about" className="text-center space-y-4">
-          <div className="relative w-full my-10 h-0.5">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-70"></div>
+          {/* Flex container for paragraph + image */}
+          <div className="flex items-center justify-center gap-6">
+
+            {/* About Me paragraph */}
+            <p className={`${inter.className} text-lg text-slate-300 leading-relaxed flex-1 text-left`}>
+              I am a <span className="text-white font-semibold">Boğaziçi University</span> graduate programmer developing
+              <span className="text-blue-400 font-semibold"> Native Android</span> /
+              <span className="text-blue-400 font-semibold"> Flutter</span> apps using a wide span of mobile technologies.
+              I write & publish apps along with writing Medium articles on Medium, mostly on Android.
+              Currently learning Data Science and Machine Learning to implement Artificial Intelligence Agents in my apps.
+            </p>
+
+            {/* Scroll down mouse GIF */}
+            <button
+              className="focus:outline-none"
+              aria-label="Scroll to projects"
+            >
+              <img
+                src="https://i0.wp.com/rambutgelap.com/wp-content/uploads/2022/07/scroll-down-mouse.gif?ssl=1"
+                alt="Scroll down mouse GIF"
+                width={50}
+                height={50}
+                className="opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </button>
           </div>
-
-          <p className={`max-w-2xl mx-auto mt-8 ${inter.className} text-lg text-slate-300 leading-relaxed`}>
-            I am a <span className="text-white font-semibold">Boğaziçi University</span> graduate programmer developing
-            <span className="text-blue-400 font-semibold"> Native Android</span> /
-            <span className="text-blue-400 font-semibold"> Flutter</span> apps using a wide span of mobile technologies.
-            Currently learning Data Science and Machine Learning to implement Artificial Intelligence Agents in my apps.
-          </p>
-
-          {/* Download Button */}
-          <a
-            href="#apps"
-            className="inline-block bg-white text-black px-6 py-3 rounded-xl hover:bg-gray-100 transition-all shadow-sm hover:shadow-md"
-          >
-            Download Resume
-          </a>
-
-          {/* GIF */}
-          <button
-            className="mx-auto block focus:outline-none mt-2"
-            aria-label="Scroll to projects"
-          >
-            <img
-              src="https://i0.wp.com/rambutgelap.com/wp-content/uploads/2022/07/scroll-down-mouse.gif?ssl=1"
-              alt="Scroll down mouse GIF"
-              width={50}
-              height={50}
-              className="mx-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-          </button>
         </section>
 
 

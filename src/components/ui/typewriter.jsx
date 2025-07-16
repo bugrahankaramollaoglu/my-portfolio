@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react"
 import { motion, animate, useMotionValue, useTransform } from "framer-motion";
+import { Mail, Github, Linkedin } from "lucide-react";
+
 
 export function Typewriter({
   delay,
