@@ -103,6 +103,6 @@ function BlinkingCursor() {
     <motion.div
       variants={cursorVariants}
       animate="blinking"
-      className="inline-block h-10 w-[10px] translate-y-1 bg-blue-900" />
+      className="inline-block h-10 w-[10px] translate-y-1 bg-white" />
   );
 }

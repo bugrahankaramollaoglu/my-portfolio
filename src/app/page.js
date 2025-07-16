@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <SparklesCore particleColor="#ffffffff" className="absolute inset-0 z-0" />
+
       <div className="mt-10 space-y-16">
 
         {/* Hero Section */}
@@ -27,25 +28,40 @@ export default function Home() {
             height={200}
             className="mx-auto rounded-full border-4"
           />
-          {/* <h1 className={`text-5xl font-bold ${raleway.className}`}>Buğrahan Karamollaoğlu</h1> */}
           <h1 className={`text-5xl font-bold ${oswald.className}`}>
-            <Typewriter delay={0.5} baseText="Buğrahan Karamollaoğlu" />
+            <Typewriter delay={0.5} baseText="Buğrahan Karamollaoğlu." />
           </h1>
-          <h4 className={`text-4xl ${oswald.className}`}>Mobile Developer</h4>
+          <h4 className={`text-4xl ${oswald.className}`}>Fullstack Mobile Developer</h4>
+          <h4 className={`text-3xl flex justify-center items-center gap-2 ${oswald.className}`}>
+            Native Android
+            <img src="/android.png" alt="Android" className="h-6 w-6" />
+            •
+            Flutter
+            <img src="/flutter.png" alt="Flutter" className="h-6 w-6" />
+            •
+            Django
+            <img src="/django.png" alt="Django" className="h-6 w-6" />
+            •
+            Nodejs
+            <img src="/nodejs.png" alt="Nodejs" className="h-6 w-6" />
+          </h4>
         </section>
 
         {/* About me Section */}
 
         {/* About me Section */}
         <section id="about" className="text-center space-y-4">
-          <div className="h-px mb-10 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+          <div className="relative w-full my-10 h-0.5">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-70"></div>
+          </div>
 
           <p className="max-w-xl mx-auto mt-8">
-            I'm a self-driven mobile developer focused on building clean, fast, and scalable apps using Flutter.
-            With a background in English Language & Literature, I combine logical thinking with strong communication.
+            Versatile and motivated mobile developer with computer engineering foundation and a humanities background from Boğaziçi
+            University. Gained a programming experience in C/C++ at Ecole42, followed by training in Flutter and project management at Google
+            Academy. Specialized in Native Android development in Java, Kotlin, and Jetpack Compose.
           </p>
 
-          {/* Clickable GIF (optional) */}
+          {/* GIF) */}
           <button
             className="mx-auto block focus:outline-none"
             aria-label="Scroll to projects"
