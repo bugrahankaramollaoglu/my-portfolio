@@ -4,7 +4,6 @@ import { Typewriter } from "@/components/ui/typewriter";
 
 export default function HeroSection({ oswald, inter }) {
 	return (
-
 		<section className="space-y-4 text-center">
 			<Image
 				src="/avatar.png"
@@ -33,6 +32,5 @@ export default function HeroSection({ oswald, inter }) {
 				<img src="/icons/nodejs.png" alt="Nodejs" className="h-6 w-6" />
 			</h4>
 		</section>
-
 	);
 }
