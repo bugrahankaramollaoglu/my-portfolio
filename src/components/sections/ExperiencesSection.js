@@ -26,7 +26,7 @@ export default function ExperienceSection({ oswald, inter }) {
 
 	return (
 		<section id="experience" className="my-16 px-4 sm:px-6 lg:px-8">
-			<h2 className={`text-4xl font-bold text-center text-white mb-12 ${oswald.className} border border-white/50 py-4 px-8 rounded-xl`}>
+			<h2 className={`text-2xl sm:text-4xl font-bold text-center text-white mb-12 ${oswald.className} border border-white/50 py-4 px-6 sm:px-8 rounded-xl`}>
 				Experience
 			</h2>
 
@@ -47,12 +47,12 @@ export default function ExperienceSection({ oswald, inter }) {
 
 									<div className="flex items-center space-x-2">
 										<div className={`w-3 h-3 rounded-full ${exp.status === 'Current'
-												? 'bg-blue-400 animate-pulse'
-												: 'bg-green-400'
+											? 'bg-blue-400 animate-pulse'
+											: 'bg-green-400'
 											}`}></div>
 										<span className={`text-sm font-medium ${exp.status === 'Current'
-												? 'text-blue-300'
-												: 'text-green-300'
+											? 'text-blue-300'
+											: 'text-green-300'
 											}`}>
 											{exp.status}
 										</span>
@@ -62,7 +62,7 @@ export default function ExperienceSection({ oswald, inter }) {
 								{/* Content */}
 								<div className="space-y-4">
 									<div>
-										<h3 className={`text-2xl font-bold text-white mb-2 ${oswald.className} group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 group-hover:bg-clip-text transition-all duration-300`}>
+										<h3 className={`text-xl sm:text-2xl font-bold text-white mb-2 ${oswald.className} ...`}>
 											{exp.position}
 										</h3>
 										<h4 className={`text-xl font-semibold text-gray-300 ${inter.className}`}>
