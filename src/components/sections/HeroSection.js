@@ -24,7 +24,7 @@ export default function HeroSection({ oswald, inter }) {
 				<img src="/icons/android.png" alt="Android" className="h-6 w-6" />
 				•
 				Flutter
-				<img src="/icons/flutter.png" alt="Flutter" className="h-6 w-6" />
+				<img src="/icons/android.png" alt="Flutter" className="h-6 w-6" />
 				•
 				Django
 				<img src="/icons/django.png" alt="Django" className="h-6 w-6" />
