@@ -32,17 +32,20 @@ export default function Home() {
         {/* Experiences Section */}
         <ExperiencesSection oswald={oswald} inter={inter} />
 
-        {/* Education Section */}
-        <EducationSection oswald={oswald} inter={inter} />
-
-        {/* Bootcamps Section */}
-        <BootcampsSection oswald={oswald} inter={inter} />
-
         {/* Apps Section */}
         <AppsSection oswald={oswald} inter={inter} />
 
         {/* Articles Section */}
         <ArticlesSection oswald={oswald} inter={inter} />
+
+        {/* Horizontal Divider*/}
+        <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+
+        {/* Education Section */}
+        <EducationSection oswald={oswald} inter={inter} />
+
+        {/* Bootcamps Section */}
+        <BootcampsSection oswald={oswald} inter={inter} />
 
         {/* Skills Section */}
         <SkillsSection oswald={oswald} inter={inter} />
