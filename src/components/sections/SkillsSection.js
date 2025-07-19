@@ -6,6 +6,7 @@ export default function SkillsSection({ oswald, inter }) {
 		{ name: "Jetpack Compose", icon: "/skill_icons/jetpack_compose.png" },
 		{ name: "Java", icon: "/skill_icons/java.png" },
 		{ name: "Python", icon: "/skill_icons/python.png" },
+		{ name: "C/C++", icon: "/skill_icons/c.png" },
 		{ name: "Django", icon: "/skill_icons/django.png" },
 		{ name: "NodeJS", icon: "/skill_icons/nodejs.png" },
 		{ name: "SQLite", icon: "/skill_icons/sqlite.png" },
