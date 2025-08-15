@@ -42,7 +42,7 @@ const apps = [
 		definition: "A task tracking app.",
 		url: "https://github.com/bugrahankaramollaoglu/gojo#gojo",
 		icon: "/logos/gojo.png",
-		tech_stack: "Flutter, MVP, Nodejs + Express backend, BloC, MongoDB",
+		tech_stack: "Flutter, Django Backend, Riverpod, PostgreSQL, Gemini AI, LLMs",
 		language: "flutter",
 	},
 	{
