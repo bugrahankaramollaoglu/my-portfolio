@@ -42,7 +42,7 @@ const apps = [
 		definition: "A task tracking app.",
 		url: "https://github.com/bugrahankaramollaoglu/gojo#gojo",
 		icon: "/logos/gojo.png",
-		tech_stack: "Flutter, Django Backend, Riverpod, PostgreSQL, Gemini AI, LLMs",
+		tech_stack: "Django Backend, Riverpod, PostgreSQL, Gemini AI, LLMs",
 		language: "flutter",
 	},
 	{
@@ -51,7 +51,7 @@ const apps = [
 		definition: "A finance tracking app with sustainability theme.",
 		url: "https://github.com/bugrahankaramollaoglu/greefin#screenshots",
 		icon: "/logos/greefin.png",
-		tech_stack: "Flutter, MVVM, Figma, Jira, Agile",
+		tech_stack: "MVVM, Figma, Jira, Agile",
 		language: "flutter",
 
 	},
@@ -61,7 +61,7 @@ const apps = [
 		definition: "An app to share your journey experiences.",
 		url: "https://github.com/bugrahankaramollaoglu/rota_portali#-rota-portali",
 		icon: "/logos/rota_portali.png",
-		tech_stack: "Flutter, Firebase, Google Maps API",
+		tech_stack: "Firebase, Google Maps API",
 		language: "flutter",
 	},
 	{
@@ -70,7 +70,7 @@ const apps = [
 		definition: "A weather forecast app.",
 		url: "https://github.com/bugrahankaramollaoglu/weatherly#%EF%B8%8F-weatherly",
 		icon: "/logos/weatherly.png",
-		tech_stack: "Flutter, API, Provider, Http",
+		tech_stack: "API, GetX, Http",
 		language: "flutter",
 
 	},
